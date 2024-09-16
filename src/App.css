@@ -1,0 +1,205 @@
+:root {
+    --primary-color: #035465;
+    --secondary-color: #FDD661;
+
+    --background-color: #FEFAEE;
+
+    --shadow: rgba(253, 214, 97, 0.4);
+
+    /* Text Color */
+    --text-color: #F36B17;
+}
+
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: var(--background-color);
+  }
+  
+
+.sclm-button {
+    height: 50px;
+    border-radius: 50px;
+    background: var(--primary-color);
+    color: #FFF;
+    font-size: 18px;
+    line-height: 50px;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 50px;
+    transition: .3s all ease-in;
+}
+
+.sclm-button:hover {
+    background: var(--secondary-color);
+    color: var(--text-color);
+}
+
+input {
+    background: transparent;
+}
+
+input:focus {
+    all: unset;
+}
+
+a, button {
+    transition: .3s all ease-in-out;
+}
+
+.login-page {
+    background: var(--background-color);
+    padding-left: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 130px;
+}
+
+
+/**=====================================================
+                    Dashboard
+=====================================================**/
+.dashboardSection {
+    padding: 70px 0;
+    height: 100%;
+    background: var(--background-color);
+}
+
+.dashboardSection .DBUsername {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboardSection .DBUsername h2,
+.dashboardSection .DBUsername h4 {
+    display: block;
+    margin-bottom: 0;
+    color: var(--primary-color);
+}
+
+.dashboardSection .DBuserImage {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+}
+
+.dashboardSection .DBuserImage img {
+    width: 100%;
+    height: 100%;
+}
+
+.dashboardSection .topSearch form {
+    width: 400px;
+    height: 50px;
+    background: var(--background-color);
+    border: 1px solid grey;
+    border-radius: 50px;
+    padding-left: 20px;
+    overflow: hidden;
+}
+
+.dashboardSection .topSearch input {
+    width: 100%;
+}
+
+.dashboardSection .topSearch form button {
+    width: 55px;
+    border-radius: 50px;
+}
+
+.dashboardSection .topSearch form button img {
+    width: 20px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.custom-shadow {
+    box-shadow: 0 0 20px var(--shadow);
+    border-radius: 20px;
+}
+
+.dashboardSection li {
+    border-bottom: 1px solid #EEE;
+}
+
+.dashboardSection li:last-child {
+    border: none;
+}
+
+.dashboardSection li a {
+    padding: 11px 0;
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+.dashboardSection li a:hover {
+    color: var(--text-color);
+}
+
+/* Tasks */
+.tasks-item,
+.task-flow-item,
+.teachers-corner .tc-item {
+    border-radius: 10px;
+    background: var(--secondary-color);
+}
+
+.tasks-item p {
+    color: var(--primary-color);
+}
+
+.tasks-item h4 {
+    color: var(--text-color);
+}
+
+.tasks-item:hover,
+.task-flow-item:hover {
+    background: var(--text-color);
+}
+
+.tasks-item:hover h4,
+.task-flow-item:hover h4,
+.tasks-item:hover p,
+.teachers-corner .tc-item:hover h4 {
+    color: #FFF;
+}
+
+.task-flow-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 3);
+    height: 100px;
+    text-align: center;
+}
+
+/* Teachers Corner*/
+.teachers-corner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.teachers-corner .tc-item {
+    width: calc(50% - 8px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.teachers-corner .tc-item:hover {
+    background: var(--text-color);
+}
+
+.teachers-corner .tc-item img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
