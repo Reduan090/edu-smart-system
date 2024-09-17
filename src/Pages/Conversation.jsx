@@ -1,8 +1,6 @@
-import React from 'react';
-import SideBar from '../SharedComponents/SideBar';
-import img from '../assets/nn.png'
-
-const Notice = () => {
+import img from "../assets/conversation.png"
+import SideBar from "../SharedComponents/SideBar";
+const Conversation = () => {
     return (
         <>
 
@@ -17,10 +15,10 @@ const Notice = () => {
                     <div>
                         <h1></h1>
                     </div>
-                    
+
                     <div className='absolute top-0 left-0 w-full text-center '>
-                        <h1 className='text-4xl font-bold text-cyan-950 py-2'>
-                            NoticeBoard
+                        <h1 className='text-4xl font-bold text-green-900 py-2'>
+                            Talk to Teacher
                         </h1>
                     </div>
 
@@ -30,4 +28,4 @@ const Notice = () => {
     );
 };
 
-export default Notice;
+export default Conversation;

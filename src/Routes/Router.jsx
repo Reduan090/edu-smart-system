@@ -6,6 +6,11 @@ import FeesPayment from '../Pages/FeesPayment';
 import TalkToTeacher from '../Pages/TalkToTeacher';
 import NoticeBoard from '../Components/NoticeBoard';
 import Notice from '../Pages/Notice';
+import StuProfile from '../Components/StuProfile';
+import { Result } from 'postcss';
+import Results from '../Pages/Results';
+import Attendance from '../Pages/Attendance';
+import Conversation from '../Pages/Conversation';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +40,22 @@ const router = createBrowserRouter([
       {
         path: '/noticeBoard',
         element: <Notice/>,
+      },
+      {
+        path: '/StudentProfile',
+        element: <StuProfile />,
+      },
+      {
+        path: '/results',
+        element: <Results/>
+      },
+      {
+        path: '/attendance',
+        element: <Attendance/>
+      },
+      {
+        path: '/talktoteacher',
+        element: <Conversation/>
       },
     ]
   }

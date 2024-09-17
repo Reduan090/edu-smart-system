@@ -6,7 +6,7 @@ import { FaTachometerAlt, FaTasks, FaUser, FaCog, FaUniversity } from "react-ico
 const SideBar = () => {
 
     return (
-        <div className="flex-grow w-20 flex flex-col items-center bg-[var(--primary-color)]">
+        <div className="global-sidebar flex-grow-y w-20 flex flex-col items-center bg-[var(--primary-color)]">
           <div className="p-4">
             <ul className="menu space-y-6 flex flex-col items-center">
               {/* Profile Icon at the Top */}

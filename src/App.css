@@ -203,3 +203,46 @@ a, button {
     width: 60px;
     border-radius: 50%;
 }
+
+/* Sidebar */
+.global-sidebar li {
+    border: 0;
+}
+
+
+/**=====================================================
+                    Student Profile
+=====================================================**/
+.student-profile-page {
+    padding: 70px 0;
+    height: 100%;
+    background: var(--background-color);
+}
+
+.studprof-tablist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.studprof-tabs {
+    height: 100px;
+    width: 120px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0 0 20px var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    color: var(--primary-color);
+    font-weight: 600;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.tab-active,
+.studprof-tabs:hover {
+    background: var(--text-color);
+    color: #FFF;
+}

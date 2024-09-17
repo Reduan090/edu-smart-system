@@ -18,7 +18,7 @@ const NoticeBoard = () => {
 
                                 <Link to='/results'><li><a href="#" className="gap-2"><img src={Result} alt="icon" className="h-5 w-5" />Results</a></li></Link>
 
-                                <Link to='/results'><li><a href="#" className="gap-2"><img src={Attendance} alt="icon" className="h-5 w-5" />Attendance</a></li></Link>
+                                <Link to='/attendance'><li><a href="#" className="gap-2"><img src={Attendance} alt="icon" className="h-5 w-5" />Attendance</a></li></Link>
 
                                 <Link to='/talktoteacher'><li><a href="#" className="gap-2"><img src={sms} alt="icon" className="h-5 w-5" />Talk to Teacher</a></li></Link>
                             </ul>
