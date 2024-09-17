@@ -3,14 +3,14 @@ import Root from '../Layout/Root'; // Correct default import for Root
 import Login from "../Pages/Login";
 import Home from '../Pages/Home';
 import FeesPayment from '../Pages/FeesPayment';
-import TalkToTeacher from '../Pages/TalkToTeacher';
-import NoticeBoard from '../Components/NoticeBoard';
 import Notice from '../Pages/Notice';
 import StuProfile from '../Components/StuProfile';
 import { Result } from 'postcss';
 import Results from '../Pages/Results';
 import Attendance from '../Pages/Attendance';
 import Conversation from '../Pages/Conversation';
+import TeacherDashboard from '../Pages/TeacherDashboard';
+import TeachersProfile from '../Pages/TeachersProfile';
 
 const router = createBrowserRouter([
   {
@@ -27,7 +27,11 @@ const router = createBrowserRouter([
       },
       {
         path: '/teacherlogin',
-        element: <Home />,
+        element: <TeacherDashboard />,
+      },
+      {
+        path: '/teacherlogin',
+        element: <TeacherDashboard />,
       },
       {
         path: '/payment',
@@ -56,6 +60,10 @@ const router = createBrowserRouter([
       {
         path: '/talktoteacher',
         element: <Conversation/>
+      },
+      {
+        path: '/TeacherProfile',
+        element: <TeachersProfile/>
       },
     ]
   }
