@@ -63,7 +63,7 @@ const TeacherSidebar = () => {
                     </ul>
                 </div>
             </div>
-            );
+           
         </>
     );
 };

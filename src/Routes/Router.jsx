@@ -11,6 +11,11 @@ import Attendance from '../Pages/Attendance';
 import Conversation from '../Pages/Conversation';
 import TeacherDashboard from '../Pages/TeacherDashboard';
 import TeachersProfile from '../Pages/TeachersProfile';
+import TeacherAttendance from '../Pages/TeacherAttendance';
+import MarksEntry from '../Pages/MarksEntry';
+import ReportGeneration from '../Pages/ReportGeneration';
+import ResultsOfStu from '../Pages/ResultsOfStu';
+import Communication from '../Pages/Communication';
 
 const router = createBrowserRouter([
   {
@@ -64,6 +69,30 @@ const router = createBrowserRouter([
       {
         path: '/TeacherProfile',
         element: <TeachersProfile/>
+      },
+      {
+        path: '/teacherAttendance',
+        element: <TeacherAttendance/>
+      },
+      {
+        path: '/marksEntry',
+        element: <MarksEntry/>
+      },
+      {
+        path: '/reportGen',
+        element: <ReportGeneration/>
+      },
+      {
+        path: '/resultsGen',
+        element: <ResultsOfStu/>
+      },
+      {
+        path: '/talkToStu',
+        element: <Communication/>
+      },
+      {
+        path: '/talkToStu',
+        element: <Communication/>
       },
     ]
   }

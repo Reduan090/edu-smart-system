@@ -12,8 +12,8 @@ const Notice = () => {
                     <SideBar></SideBar>
                 </div>
 
-                <div className='w-auto h-fit md:w-11/12 md:h-screen justify-center flex'>
-                    <img src={img} alt="" />
+                <div className='w-screen h-screen md:w-11/12 md:h-screen justify-center flex'>
+                    <img src={img} alt="#" />
                     <div>
                         <h1></h1>
                     </div>

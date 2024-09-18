@@ -13,9 +13,9 @@ const TeacherNoticeBoard = () => {
                     <h4 className="text-4xl text-[var(--primary-color)] font-bold mb-4">Communications</h4>
                     <ul>
 
-                        <Link to='/talktoteacher'><li><a href="#" className="gap-2"><img src={sms} alt="icon" className="h-5 w-5" />Talk to Students</a></li></Link>
+                        <Link to='/talkToStu'><li><a href="#" className="gap-2"><img src={sms} alt="icon" className="h-5 w-5" />Talk to Students</a></li></Link>
 
-                        <Link to='/talktoteacher'><li><a href="#" className="gap-2"><img src={sms} alt="icon" className="h-5 w-5" />Talk to Parents</a></li></Link>
+                        <Link to='/talkToStu'><li><a href="#" className="gap-2"><img src={sms} alt="icon" className="h-5 w-5" />Talk to Parents</a></li></Link>
                     </ul>
                 </div>
             </div>
