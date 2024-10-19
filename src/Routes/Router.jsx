@@ -16,6 +16,11 @@ import MarksEntry from '../Pages/MarksEntry';
 import ReportGeneration from '../Pages/ReportGeneration';
 import ResultsOfStu from '../Pages/ResultsOfStu';
 import Communication from '../Pages/Communication';
+import Admin from '../Pages/Admin';
+import PaymentSummery from '../Pages/PaymentSummery';
+import InfoAdd from '../Pages/InfoAdd';
+import InfoUpdate from '../Pages/InfoUpdate';
+import AdminProfile from '../Pages/AdminProfile';
 
 const router = createBrowserRouter([
   {
@@ -93,6 +98,26 @@ const router = createBrowserRouter([
       {
         path: '/talkToStu',
         element: <Communication/>
+      },
+      {
+        path: '/adminPage',
+        element: <Admin/>
+      },
+      {
+        path: '/paymentSummary',
+        element: <PaymentSummery/>
+      },
+      {
+        path: '/infoAdd',
+        element: <InfoAdd/>
+      },
+      {
+        path: '/infoUpdate',
+        element: <InfoUpdate/>
+      },
+      {
+        path: '/adminProfile',
+        element: <AdminProfile/>
       },
     ]
   }

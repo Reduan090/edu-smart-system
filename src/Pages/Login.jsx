@@ -9,8 +9,8 @@ const Login = () => {
         <>
             <div className="login-page">
 
-            <div className='relative w-[500px] z-10'>
-                <h1 className="text-4xl font-bold text-center text-[var(--primary-color)]  animate__animated   animate__flash">Name Of School !</h1>
+                <div className='relative w-[500px] z-10'>
+                    <h1 className="text-4xl font-bold text-center text-[var(--primary-color)]  animate__animated   animate__flash">Name Of School !</h1>
                     <h1 className="text-4xl font-bold text-center text-[var(--primary-color)]  animate__animated   animate__flash mt-3">Sign In</h1>
                     <p className="text-center mt-3">Don't have an account? <Link className="text-[var(--primary-color)] hover:text-[var(--secondary-color)] underline font-semibold" to='/signUp'>Sign Up</Link></p>
 
@@ -45,15 +45,18 @@ const Login = () => {
 
                         <div className="form-control mt-6" >
                             <Link to='/teacherlogin' className="sclm-button">Teacher Login</Link>
-                            <label className="label">
-                                <a href="#" className="label-text-alt font-medium text-[var(--primary-color)] hover:text-[var(--secondary-color)] text-base">Forgot password?</a>
-                            </label>
                         </div>
 
+                        <div className="form-control mt-6" >
+                            <Link to='/adminPage' className="sclm-button">Admin Login</Link>
+                        </div>
 
+                        <label className="label">
+                            <a href="#" className="label-text-alt font-medium text-[var(--primary-color)] hover:text-[var(--secondary-color)] text-base">Forgot password?</a>
+                        </label>
                     </form>
 
-               
+
                 </div>
 
                 <img className='h-[100%] w-auto absolute top-0 right-0 -z-1' src={img} alt="login page" />
